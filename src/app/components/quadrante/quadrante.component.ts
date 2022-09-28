@@ -10,11 +10,6 @@ import { QuadranteService } from './quadrante.service';
 export class QuadranteComponent implements OnInit {
   clientes: Array<Cliente> = [];
 
-  quadrante1 = [];
-  quadrante2 = [];
-  quadrante3 = [];
-  quadrante4 = [];
-
   constructor(private quadranteService:QuadranteService) { }
 
   ngOnInit(): void {
@@ -28,4 +23,13 @@ export class QuadranteComponent implements OnInit {
     })
   }
 
+  deleteCliente(id:number):void{
+    this.quadranteService.deleteCliente(id).subscribe(response =>{
+      console.log('Cliente excluido')
+    }, (err) => {
+      console.log(err)
+    }, () => {
+      this.getClientes();
+    })
+  }
 }
