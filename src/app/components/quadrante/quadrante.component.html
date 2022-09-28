@@ -1,0 +1,22 @@
+<main>
+    <section id="quadrante1" >
+        <div *ngFor="let cliente of clientes">
+            <p *ngIf="cliente.pontuacao == 10"> {{ cliente.empresa }}</p>
+        </div>
+    </section>
+    <section id="quadrante2" >
+        <div *ngFor="let cliente of clientes">
+            <p *ngIf="cliente.pontuacao == 7"> {{ cliente.empresa }}</p>
+        </div>
+    </section>
+    <section id="quadrante3" >
+        <div *ngFor="let cliente of clientes">
+            <p *ngIf="cliente.pontuacao == 5"> {{ cliente.empresa }}</p>
+        </div>
+    </section>
+    <section id="quadrante4" >
+        <div *ngFor="let cliente of clientes">
+            <p *ngIf="cliente.pontuacao == 0"> {{ cliente.empresa }}</p>
+        </div>
+    </section>
+</main>

@@ -6,21 +6,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthService } from './login/auth.service';
 import { LoginComponent } from './login/login.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthGuard } from './guard/auth.guard';
+import { HomeComponent } from './home/home.component';
+import { QuadranteComponent } from './components/quadrante/quadrante.component';
+import { ClienteComponent } from './components/quadrante/cliente/cliente.component';
+import { HttpClientModule } from '@angular/common/http';
+import { QuadranteService } from './components/quadrante/quadrante.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    QuadranteComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, QuadranteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
