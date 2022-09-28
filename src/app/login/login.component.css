@@ -18,13 +18,17 @@ h1{
     width: 50vw;
 }
 
-div{
+h2{
+    display: none;
+}
+
+section{
     width: 50vw;
     height: 100vh;
 }
 
 
-h1{
+h1, h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 48px;
@@ -32,7 +36,7 @@ h1{
     color: #038C73;
 }
 
-div{
+section{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +44,7 @@ div{
     box-shadow: -4px 0px 9px 0px #333333;
 }
 
-form{
+div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,4 +79,19 @@ button{
 
 button:hover{
     background-color: #038C73;
+}
+
+@media (max-width: 650px) {
+    h1{
+        display: none;
+    }
+
+    section{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    h2{
+        display: block;
+    }
 }

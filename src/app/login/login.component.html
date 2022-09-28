@@ -1,12 +1,13 @@
 <main>
     <h1>Mining4B</h1>
-    <div>
-        <form action="#">
+    <section>
+        <div>
+            <h2>Mining4B</h2>
             <label for="user">Login:</label>
-            <input type="text" name="" id="user" placeholder="Digite o usuario">
+            <input [(ngModel)]="user.nome" type="text" name="" id="user" placeholder="Digite o usuario">
             <label for="password">Senha:</label>
-            <input type="password" name="" id="password" placeholder="Digite a senha">
-            <a [routerLink]="['/navbar']" routerLinkActive="router-link-active"><button type="submit">Entrar</button></a>
-        </form>
-    </div>
+            <input [(ngModel)]="user.senha" type="password" name="" id="password" placeholder="Digite a senha">
+            <button type="submit" (click)="fazerLogin()">Entrar</button>
+        </div>
+    </section>
 </main>
