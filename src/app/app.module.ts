@@ -10,9 +10,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AuthGuard } from './guard/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { QuadranteComponent } from './components/quadrante/quadrante.component';
-import { ClienteComponent } from './components/cliente/cliente.component';
 import { HttpClientModule } from '@angular/common/http';
 import { QuadranteService } from './components/quadrante/quadrante.service';
+import { ClienteComponent } from './components/cliente/cliente.component';
+import { CadastroComponent } from './components/quadrante/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { QuadranteService } from './components/quadrante/quadrante.service';
     NavbarComponent,
     HomeComponent,
     QuadranteComponent,
-    ClienteComponent
+    ClienteComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

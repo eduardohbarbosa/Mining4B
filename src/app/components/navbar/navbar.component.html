@@ -1,9 +1,9 @@
 <nav>
     <h1>mining4B</h1>
     <ul>
-        <li><a href="#">Quadrante</a></li>
+        <li><a [routerLink]="['/home']" routerLinkActive="router-link-active">Quadrante</a></li>
         <li><a href="#">Agenda</a></li>
-        <li><a href="#">Cadastro</a></li>
+        <li><a [routerLink]="['/cadastro']" routerLinkActive="router-link-active">Cadastro</a></li>
     </ul>
     <a [routerLink]="['/login']" routerLinkActive="router-link-active">Sair</a>
 </nav>
