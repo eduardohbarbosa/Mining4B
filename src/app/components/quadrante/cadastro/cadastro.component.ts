@@ -10,7 +10,7 @@ import { QuadranteService } from '../quadrante.service';
 export class CadastroComponent implements OnInit {
 
   cliente: Cliente = {
-    id: 0,
+    id: "",
     empresa: "",
     cnae: "",
     cnpj: "",
@@ -23,7 +23,7 @@ export class CadastroComponent implements OnInit {
     telefone: "",
     celular: "",
     responsavel: "",
-    pontuacao: 0,
+    pontuacao: "",
   }
 
   constructor(private quadranteService: QuadranteService) { }

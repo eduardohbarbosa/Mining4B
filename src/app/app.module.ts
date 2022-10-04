@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { QuadranteService } from './components/quadrante/quadrante.service';
 import { ClienteComponent } from './components/cliente/cliente.component';
 import { CadastroComponent } from './components/quadrante/cadastro/cadastro.component';
+import { AtualizacaoComponent } from './components/quadrante/atualizacao/atualizacao.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CadastroComponent } from './components/quadrante/cadastro/cadastro.comp
     HomeComponent,
     QuadranteComponent,
     ClienteComponent,
-    CadastroComponent
+    CadastroComponent,
+    AtualizacaoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 export interface Cliente{
-    id: number;
+    id: string;
     empresa: string;
     cnae: string;
     cnpj: string;
@@ -12,5 +12,5 @@ export interface Cliente{
     telefone: string;
     celular: string;
     responsavel: string;
-    pontuacao: number;
+    pontuacao: string;
 }

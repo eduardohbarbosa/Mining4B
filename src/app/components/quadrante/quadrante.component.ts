@@ -22,4 +22,11 @@ export class QuadranteComponent implements OnInit {
       console.log(response)
     })
   }
+
+  remover(id:string) : void{
+    this.quadranteService.deleteCliente(id).subscribe(res => {
+      console.log('Cliente Excluido com sucesso');
+      this.getClientes();
+    })
+  }
 }

@@ -2,8 +2,8 @@
     <section id="quadrante1" >
         <div *ngFor="let cliente of clientes">
             <p> {{ cliente.empresa }}</p>
-            <button>Editar</button>
-            <button>Excluir</button>
+            <a [routerLink]="['/atualizacao', cliente.id]" routerLinkActive="router-link-active">Editar</a>
+            <button (click)="remover(cliente.id)">Excluir</button>
         </div>
     </section>
 </main>
