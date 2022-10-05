@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProspectService {
-  url = "https://sheet.best/api/sheets/74b8c6b3-b0ce-4375-84e7-b12f5397f0e6";
+  //url = "https://sheet.best/api/sheets/74b8c6b3-b0ce-4375-84e7-b12f5397f0e6";
+  url = "https://sheet.best/api/sheets/80c297f7-500d-4afe-b912-53860b98ba0f"
+  
   httpOptions = {
     headers: new HttpHeaders({
         'Content-Type': 'application/json'
