@@ -1,0 +1,44 @@
+<h2>Atualizar</h2>
+<section *ngIf="prospect">
+    <label>ID:
+        <input type="number" [(ngModel)]="prospect.id">
+    </label>
+    <label>Empresa:
+        <input type="text" [(ngModel)]="prospect.empresa">
+    </label>
+    <label>CNAE:
+        <input type="text" [(ngModel)]="prospect.cnae">
+    </label>
+    <label>CNPJ:
+        <input type="text" [(ngModel)]="prospect.cnpj">
+    </label>
+    <label>CEP:
+        <input type="text" [(ngModel)]="prospect.cep">
+    </label>
+    <label>Número:
+        <input type="text" [(ngModel)]="prospect.numero">
+    </label>
+    <label>Complemento:
+        <input type="text" [(ngModel)]="prospect.complemento">
+    </label>
+    <label>Cidade:
+        <input type="text" [(ngModel)]="prospect.cidade">
+    </label>
+    <label>Estado:
+        <input type="text" [(ngModel)]="prospect.estado">
+    </label>
+    <label>Telefone:
+        <input type="text" [(ngModel)]="prospect.telefone">
+    </label>
+    <label>Celular:
+        <input type="text" [(ngModel)]="prospect.celular">
+    </label>
+    <label>Responsavel:
+        <input type="text" [(ngModel)]="prospect.responsavel">
+    </label>
+    <label>Pontuação
+        <input type="number" [(ngModel)]="prospect.pontuacao">
+    </label>
+    <button (click)="atualizar()">Atualizar</button>
+</section>
+

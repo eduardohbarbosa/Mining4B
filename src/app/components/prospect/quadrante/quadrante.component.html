@@ -1,0 +1,49 @@
+<main>
+    <section class="grid-container">
+        <article id="quadrante1">
+            <div *ngFor="let prospect of prospects" class="container">
+                <div *ngIf="prospect.pontuacao == 10" class="row">
+                    <p> {{ prospect.empresa }}</p>
+                    <div>
+                        <button class="buttom editar" [routerLink]="['/atualizacao', prospect.id]" routerLinkActive="router-link-active">Editar</button>
+                        <button class="buttom excluir" (click)="remover(prospect.id)">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="quadrante2">
+            <div *ngFor="let prospect of prospects" class="container">
+                <div *ngIf="prospect.pontuacao == 7" class="row">
+                    <p> {{ prospect.empresa }}</p>
+                    <div>
+                        <button class="buttom editar" [routerLink]="['/atualizacao', prospect.id]" routerLinkActive="router-link-active">Editar</button>
+                        <button class="buttom excluir" (click)="remover(prospect.id)">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="quadrante3">
+            <div *ngFor="let prospect of prospects" class="container">
+                <div *ngIf="prospect.pontuacao == 5" class="row">
+                    <p> {{ prospect.empresa }}</p>
+                    <div>
+                        <button class="buttom editar" [routerLink]="['/atualizacao', prospect.id]" routerLinkActive="router-link-active">Editar</button>
+                        <button class="buttom excluir" (click)="remover(prospect.id)">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="quadrante4">
+            <div *ngFor="let prospect of prospects" class="container">
+                <div *ngIf="prospect.pontuacao == 0" class="row">
+                    <p> {{ prospect.empresa }}</p>
+                    <div>
+                        <button class="buttom editar" [routerLink]="['/atualizacao', prospect.id]" routerLinkActive="router-link-active">Editar</button>
+                        <button class="buttom excluir" (click)="remover(prospect.id)">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</main>

@@ -1,16 +1,17 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AtualizacaoComponent } from './components/quadrante/atualizacao/atualizacao.component';
-import { CadastroComponent } from './components/quadrante/cadastro/cadastro.component';
+import { LoginComponent } from './components/login/login.component';
+import { AtualizarComponent } from './components/prospect/atualizar/atualizar.component';
+import { CadastroComponent } from './components/prospect/cadastro/cadastro.component';
+import { ProspectComponent } from './components/prospect/prospect.component';
+import { QuadranteComponent } from './components/prospect/quadrante/quadrante.component';
 import { AuthGuard } from './guard/auth.guard';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'home', component: HomeComponent, /* canActivate: [AuthGuard] */},
+  {path: 'home', component: ProspectComponent, /* canActivate: [AuthGuard] */},
   {path: 'cadastro', component: CadastroComponent, /* canActivate: [AuthGuard] */},
-  {path: 'atualizacao/:id', component: AtualizacaoComponent, /* canActivate: [AuthGuard] */},
+  {path: 'atualizacao/:id', component: AtualizarComponent, /* canActivate: [AuthGuard] */},
   { path: '',   redirectTo: '/home', pathMatch: 'full'}
 ];
 

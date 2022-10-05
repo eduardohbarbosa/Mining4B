@@ -1,31 +1,29 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthService } from './login/auth.service';
-import { LoginComponent } from './login/login.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { AuthGuard } from './guard/auth.guard';
-import { HomeComponent } from './home/home.component';
-import { QuadranteComponent } from './components/quadrante/quadrante.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
+import { LoginComponent } from './components/login/login.component';
+import { ProspectComponent } from './components/prospect/prospect.component';
+import { CadastroComponent } from './components/prospect/cadastro/cadastro.component';
+import { AtualizarComponent } from './components/prospect/atualizar/atualizar.component';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { QuadranteService } from './components/quadrante/quadrante.service';
-import { ClienteComponent } from './components/cliente/cliente.component';
-import { CadastroComponent } from './components/quadrante/cadastro/cadastro.component';
-import { AtualizacaoComponent } from './components/quadrante/atualizacao/atualizacao.component';
+import { QuadranteComponent } from './components/prospect/quadrante/quadrante.component';
+import { AuthGuard } from './guard/auth.guard';
+import { AuthService } from './services/auth.service';
+import { ProspectService } from './services/prospect.service';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavBarComponent,
     LoginComponent,
-    NavbarComponent,
-    HomeComponent,
-    QuadranteComponent,
-    ClienteComponent,
+    ProspectComponent,
     CadastroComponent,
-    AtualizacaoComponent
+    AtualizarComponent,
+    QuadranteComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +31,7 @@ import { AtualizacaoComponent } from './components/quadrante/atualizacao/atualiz
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthService, AuthGuard, QuadranteService],
+  providers: [AuthGuard, AuthService, ProspectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

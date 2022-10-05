@@ -1,0 +1,52 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1px;
+    row-gap: 1px;
+    width: 900px;
+    height: 550px;
+    background-color: black;
+}
+
+article{
+    background-color: white;
+    padding: 10px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+p{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.buttom{
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+}
+
+.editar{
+    background-color: blue;
+    margin-right: 5px;
+}
+
+.excluir{
+    background-color: red;
+}
