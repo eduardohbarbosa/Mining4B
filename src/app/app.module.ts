@@ -14,6 +14,7 @@ import { QuadranteComponent } from './components/prospect/quadrante/quadrante.co
 import { AuthGuard } from './guard/auth.guard';
 import { AuthService } from './services/auth.service';
 import { ProspectService } from './services/prospect.service';
+import { ListaProspectComponent } from './components/prospect/lista-prospect/lista-prospect.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProspectService } from './services/prospect.service';
     ProspectComponent,
     CadastroComponent,
     AtualizarComponent,
-    QuadranteComponent
+    QuadranteComponent,
+    ListaProspectComponent
   ],
   imports: [
     BrowserModule,

@@ -4,11 +4,11 @@ import { Prospect } from 'src/app/models/prospect';
 import { ProspectService } from 'src/app/services/prospect.service';
 
 @Component({
-  selector: 'app-atualizar',
-  templateUrl: './atualizar.component.html',
-  styleUrls: ['./atualizar.component.css']
+  selector: 'app-lista-prospect',
+  templateUrl: './lista-prospect.component.html',
+  styleUrls: ['./lista-prospect.component.css']
 })
-export class AtualizarComponent implements OnInit {
+export class ListaProspectComponent implements OnInit {
 
   id: any = '';
   prospect!: Prospect
@@ -32,7 +32,6 @@ export class AtualizarComponent implements OnInit {
   constructor(private prospectService: ProspectService, private router: Router,private actRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    //Pega o id da URL
     this.id = this.actRoute.snapshot.paramMap.get('id');
 
     this.prospectService.getProspect(this.id).subscribe(res => {
@@ -42,10 +41,11 @@ export class AtualizarComponent implements OnInit {
     })
   }
 
-  atualizar(){
-    this.prospectService.updateProspect(this.id, this.prospect).subscribe(res => {
-      console.log(res);
+  remover(id:number) : void{
+    this.prospectService.deleteProspect(id.toString()).subscribe(res => {
+      console.log('Cliente Excluido com sucesso');
       this.router.navigate(['/'])
     })
   }
+
 }

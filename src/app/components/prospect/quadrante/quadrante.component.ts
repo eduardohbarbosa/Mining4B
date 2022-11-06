@@ -9,24 +9,34 @@ import { ProspectService } from 'src/app/services/prospect.service';
 })
 export class QuadranteComponent implements OnInit {
   prospects: Array<Prospect> = [];
+/*   prospects = [{
+    id: 1,
+    empresa: "Teste",
+    cnae: "Teste",
+    cnpj: "Teste",
+    cep: "Teste",
+    endereco: "Teste",
+    numero: "Teste",
+    complemento: "Teste",
+    cidade: "Teste",
+    estado: "Teste",
+    telefone: "Teste",
+    celular: "Teste",
+    responsavel: "Teste",
+    pontuacao: 10,
+  }] */
 
   constructor(private prospectService:ProspectService) { }
 
   ngOnInit(): void {
-    this.getClientes();
+    this.getProspects();
+
   }
 
-  getClientes(): void{
+  getProspects(): void{
     this.prospectService.getProspects().subscribe(response => {
       this.prospects = response;
       console.log(response)
-    })
-  }
-
-  remover(id:string) : void{
-    this.prospectService.deleteProspect(id).subscribe(res => {
-      console.log('Cliente Excluido com sucesso');
-      this.getClientes();
     })
   }
 

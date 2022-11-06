@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#form{
+    max-width: 900px;
+    margin: auto;
+}
+
+label{
+    font-weight: 500;
+}
+
+.container-button{
+    width: 240px;
+    margin: auto;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #FAFAFA;
+    margin: 10px;
+}
+
+.atualizar{
+    background-color: #087891;
+}
+
+.cancelar{
+    background-color: #B31D14;
+}
+
+.button:hover{
+    background-color: #158566;
+}

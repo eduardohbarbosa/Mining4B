@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+section{
+    max-width: 1200px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #158566;
+    box-shadow: 2px 2px 4px 0px #33333378;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+div{
+    text-align: left;
+}
+
+p{
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #FAFAFA;
+    margin: 10px;
+}
+
+.editar{
+    background-color: #087891;
+}
+
+.excluir{
+    background-color: #B31D14;
+}
+
+.button:hover{
+    background-color: #158566;
+}
+
+@media (max-width: 770px) {
+
+    .row{
+        text-align: center;
+    }
+}

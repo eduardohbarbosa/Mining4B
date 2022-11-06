@@ -15,38 +15,67 @@ main{
 }
 
 article{
+    position: relative;
     background-color: white;
     padding: 10px;
 }
 
-
-.row{
+.item{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black;
     padding: 10px;
 }
 
 p{
     font-size: 24px;
     text-transform: uppercase;
+    margin: 0;
 }
 
-.buttom{
-    cursor: pointer;
+.button{
     width: 80px;
     height: 30px;
-    text-transform: uppercase;
     border: none;
-    color: white;
+    border-radius: 5px;
+    background-color: #012326;
+    font-size: 15px;
+    color: #FAFAFA;
 }
 
-.editar{
-    background-color: blue;
-    margin-right: 5px;
+button:hover{
+    background-color: #038C73;
 }
 
-.excluir{
-    background-color: red;
+.seta {
+    position: absolute;
+    padding: 5px;
+    box-shadow: 1px -1px 0 1px #000000f2 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+
+}
+
+#seta1{
+    top: -3px;
+    left: -7px;
+    transform: rotate(135deg);
+}
+
+#seta2{
+    top: -7px;
+    left: -3px;
+    transform: rotate(45deg);
+}
+
+#seta3{
+    top: -6px;
+    right: -2px;
+    transform: rotate(222deg);
+}
+
+#seta4{
+    bottom: -2px;
+    left: -7px;
+    transform: rotate(-45deg)
 }

@@ -1,5 +1,5 @@
 export interface Prospect{
-    id: string;
+    id: number;
     empresa: string;
     cnae: string;
     cnpj: string;
