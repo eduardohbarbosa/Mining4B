@@ -30,7 +30,6 @@ export class QuadranteComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProspects();
-
   }
 
   getProspects(): void{
@@ -39,5 +38,6 @@ export class QuadranteComponent implements OnInit {
       console.log(response)
     })
   }
+
 
 }

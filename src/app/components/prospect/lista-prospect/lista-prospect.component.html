@@ -2,12 +2,12 @@
 
 <section *ngIf="prospect">
     <h1>{{prospect.empresa}}</h1>
-    <p>{{prospect.cnpj}}</p>
+    <p>{{prospect.cnpj | cnpj}}</p>
     <div class="row mb-5">
         <p class="col-md-auto"><span>CNAE:</span></p>
-        <p class="col-md-auto">{{prospect.cnae}}</p>
+        <p class="col-md-auto">{{prospect.cnae | cnae}}</p>
         <p class="col-md-auto"><span>CEP:</span></p>
-        <p class="col-md-auto">{{prospect.cep}}</p>
+        <p class="col-md-auto">{{prospect.cep | cep}}</p>
     </div>
     <div class="row mb-5">
         <p class="col-md-auto"><span>Endereço:</span></p>

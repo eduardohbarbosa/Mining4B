@@ -15,6 +15,9 @@ import { AuthGuard } from './guard/auth.guard';
 import { AuthService } from './services/auth.service';
 import { ProspectService } from './services/prospect.service';
 import { ListaProspectComponent } from './components/prospect/lista-prospect/lista-prospect.component';
+import { CnpjPipe } from './pipes/cnpj.pipe';
+import { CnaePipe } from './pipes/cnae.pipe';
+import { CepPipe } from './pipes/cep.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ListaProspectComponent } from './components/prospect/lista-prospect/lis
     CadastroComponent,
     AtualizarComponent,
     QuadranteComponent,
-    ListaProspectComponent
+    ListaProspectComponent,
+    CnpjPipe,
+    CnaePipe,
+    CepPipe
   ],
   imports: [
     BrowserModule,

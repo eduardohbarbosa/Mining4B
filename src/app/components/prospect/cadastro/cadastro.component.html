@@ -69,6 +69,29 @@
             <input class="form-control" type="text" [(ngModel)]="prospect.responsavel">
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Conhece a Empresa</label>
+            <select class="form-select"  [(ngModel)]="pergunta1">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Conhece o Produto</label>
+            <select class="form-select"  [(ngModel)]="pergunta2">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </div>
+        <div class="col-md-4 mb-3">
+            <label class="form-label">Já fez orçamento</label>
+            <select class="form-select"  [(ngModel)]="pergunta3">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </div>
+    </div>
     <div class="container-button">
         <button class="button save" (click)="save()">Cadastrar</button>
         <button class="button cancelar" [routerLink]="['/home']" routerLinkActive="router-link-active">Cancelar</button>
