@@ -11,7 +11,7 @@ export class AuthService {
   constructor(private router: Router) { }
 
   fazerLogin(usuario:Usuario){
-    if(usuario.nome === "usuario@email.com" && usuario.senha === "123456"){
+    if(usuario.nome === "mining4B" && usuario.senha === "123456"){
       this.usuarioAutenticado = true;
 
       this.router.navigate(['/home'])
